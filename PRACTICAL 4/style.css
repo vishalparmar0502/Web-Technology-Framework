@@ -1,1 +1,43 @@
-body { margin: 0; padding: 24px; font-family: Arial; background: #f6f0f7; color: #33223b; } header { display: flex; justify-content: space- between; align-items: center; } main { max-width: 700px; margin: auto; } .product { padding: 24px; background: white; border-radius:14px; } button { padding: 10px 14px; margin: 5px; border: 0; border-radius: 6px; background: #70477b; color:  white;  cursor: pointer; }  .dark { background: #211a28; color: #f8efff; } .dark .product { background: #3a2c43; }  
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: Arial;
+    background: #f6f0f7;
+    color: #33223b;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    max-width: 700px;
+    margin: auto;
+}
+
+.product {
+    padding: 24px;
+    background: white;
+    border-radius: 14px;
+}
+
+button {
+    padding: 10px 14px;
+    margin: 5px;
+    border: 0;
+    border-radius: 6px;
+    background: #70477b;
+    color: white;
+    cursor: pointer;
+}
+
+.dark {
+    background: #211a28;
+    color: #f8efff;
+}
+
+.dark .product {
+    background: #3a2c43;
+}
