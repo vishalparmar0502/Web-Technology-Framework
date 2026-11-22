@@ -1,0 +1,6 @@
+body { margin: 0; padding: 30px; font-family: Arial; background: #edf3f0; color: #193c35; } 
+.panel { max-width: 520px; margin: auto; padding: 28px; background: white; border-radius: 14px; } 
+label { display: block; margin: 14px 0; } 
+input { display: block; width: 100%; padding: 10px; margin-top:  5px; box-sizing: border-box; } 
+button { padding: 12px 18px; border: 0; border-radius: 6px; background: #176b5b; color: white; cursor: pointer; }  
+#result { font-weight:bold; }  

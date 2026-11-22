@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Bank Utilities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="panel">
+    <h1>Secure Bank Utilities</h1>
+    <p>Estimate a simple loan EMI.</p>
+
+    <label>
+        Loan Amount (₹)
+        <input id="amount" type="number" min="1" value="100000">
+    </label>
+
+    <label>
+        Annual interest rate (%)
+        <input id="rate" type="number" min="0" step="0.1" value="8.5">
+    </label>
+
+    <label>
+        Tenure (months)
+        <input id="months" type="number" min="1" value="24">
+    </label>
+
+    <button id="calculate">Calculate EMI</button>
+
+    <p id="result"></p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
