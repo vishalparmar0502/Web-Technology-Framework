@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSecure Safety Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>FinSecure Security Demo</h1>
+
+        <p>Enter text below. It is displayed as text, not executed as HTML.</p>
+
+        <label>Safe message
+            <input id="messageInput" maxlength="100">
+        </label>
+
+        <button id="show">Display safely</button>
+
+        <p id="output"></p>
+
+        <h2>Password policy check</h2>
+
+        <label>Password
+            <input id="password" type="password">
+        </label>
+
+        <button id="check">Check password</button>
+
+        <p id="passwordResult"></p>
+
+        <p class="notice">
+            This page demonstrates defensive techniques.
+            Do not test attacks on real systems.
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: Arial;
+    background: #f2f1f7;
+    color: #292943;
+}
+
+main {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 26px;
+    border-radius: 12px;
+}
+
+label {
+    display: block;
+    margin: 15px 0;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 16px;
+    background: #4d4b83;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.notice {
+    padding: 12px;
+    background: #eeeaf7;
+}
