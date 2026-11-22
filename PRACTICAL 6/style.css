@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f7f5;
+    color: #1d3d38;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 7%;
+    background: #164e48;
+    color: white;
+}
+
+main {
+    padding: 30px 7%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+button {
+    padding: 10px 14px;
+    background: #d89a36;
+    border: 0;
+    border-radius: 6px;
+}
+
+.dark {
+    background: #182c2b;
+    color: #effaf7;
+}
+
+.dark .card {
+    background: #29413e;
+}
+
+select {
+    padding: 10px;
+}

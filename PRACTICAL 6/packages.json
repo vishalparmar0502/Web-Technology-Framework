@@ -1,0 +1,17 @@
+[
+    {
+        "destination": "Saputara",
+        "duration": "2 days / 1 night",
+        "price": 2499
+    },
+    {
+        "destination": "Udaipur",
+        "duration": "3 days / 2 nights",
+        "price": 5499
+    },
+    {
+        "destination": "Goa",
+        "duration": "4 days / 3 nights",
+        "price": 7999
+    }
+]
