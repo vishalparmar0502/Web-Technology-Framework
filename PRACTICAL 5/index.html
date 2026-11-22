@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CityCare Patient Registration</title><link rel="stylesheet" href="style.css">
+</head>
+<body><main class="card">
+<h1>CityCare Hospital</h1><p>Patient Registration Form</p>
+<form id="patientForm" novalidate>
+<div class="grid">
+<label>Full name<input id="name" maxlength="50" required placeholder="Enter full name"></label>
+<label>Email address<input id="email" type="email" required placeholder="name@example.com"></label>
+<label>Mobile number<input id="mobile" type="tel" maxlength="10" required placeholder="10 digit mobile number"></label>
+<label>Date of birth<input id="dob" type="date" required></label>
+<label>Gender<select id="gender" required><option value="">Select</option><option>Female</option><option>Male</option><option>Other</option></select></label>
+<label>Department<select id="department" required><option value="">Choose department</option><option>General Medicine</option><option>Cardiology</option><option>Dermatology</option><option>Orthopaedics</option></select></label>
+<label>Password<input id="password" type="password" minlength="8" required placeholder="Minimum 8 characters"></label>
+<label>Confirm password<input id="confirm" type="password" required placeholder="Re-enter password"></label>
+</div>
+<label class="full">Address<textarea id="address" required maxlength="200" placeholder="Enter address"></textarea></label>
+<label class="check"><input id="terms" type="checkbox" required> I confirm that the information is correct.</label>
+<button type="submit">Register patient</button>
+<p id="message" role="status"></p>
+</form></main><script src="script.js"></script></body></html>
