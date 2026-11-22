@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: Arial;
+    background: #f1f5f7;
+    color: #263b4b;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+label {
+    display: block;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 9px;
+    box-sizing: border-box;
+    margin-top: 4px;
+}
+
+button {
+    padding: 10px;
+    background: #24728a;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product {
+    background: white;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
