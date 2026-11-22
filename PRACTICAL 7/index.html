@@ -1,1 +1,78 @@
-<!DOCTYPE html>  <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial- scale=1.0"><title>Central City Library</title><link rel="stylesheet" href="style.css"></head> <body><main><h1>Central City Library Portal</h1><p id="message">Please log in to continue.</p> <form id="loginForm"><label>Username<input id="username" required></label><label>Password<input id="password" type="password" required></label><button>Login</button></form>  <p><a href="/about">About library</a> | <a href="/dashboard">Dashboard</a> | <a href="/logout">Logout</ a></p></main> <script>  document.getElementById("loginForm").addEventListener("submit", async function(e) { e.preventDefault();  const response = await fetch("/login", {method:"POST",headers:{"Content-Type":"application/ json"},body:JSON.stringify({username:username.value,password:password.value})}); const data = await response.json();  document.getElementById("message").textContent = data.message; if (data.success) location.href="/dashboard";  });  </script></body></html>  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central City Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Central City Library Portal</h1>
+
+        <p id="message">Please log in to continue.</p>
+
+        <form id="loginForm">
+
+            <label>
+                Username
+                <input id="username" required>
+            </label>
+
+            <label>
+                Password
+                <input id="password" type="password" required>
+            </label>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p>
+            <a href="/about">About library</a> |
+            <a href="/dashboard">Dashboard</a> |
+            <a href="/logout">Logout</a>
+        </p>
+
+    </main>
+
+    <script>
+
+        document.getElementById("loginForm").addEventListener("submit", async function (e) {
+
+            e.preventDefault();
+
+            const username = document.getElementById("username");
+
+            const password = document.getElementById("password");
+
+            const response = await fetch("/login", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    username: username.value,
+                    password: password.value
+                })
+            });
+
+            const data = await response.json();
+
+            document.getElementById("message").textContent = data.message;
+
+            if (data.success) {
+                location.href = "/dashboard";
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
